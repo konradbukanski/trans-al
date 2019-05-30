@@ -167,13 +167,39 @@ body .ofert .ofert__details {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body .ofert .ofert__details span {
   width: 30%;
-  margin-right: 3%;
   padding: 5px;
   border-bottom: 1px solid black;
+}
+
+body .ofert .ofert__description {
+  margin: 50px 10%;
+  width: 80%;
+}
+
+body .ofert .ofert__description .ofert__description--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 0;
+  overflow-x: hidden;
+}
+
+body .ofert .ofert__description .ofert__description--text img {
+  width: 45%;
+  height: 45%;
+  border-radius: 5px;
+}
+
+body .ofert .ofert__description .ofert__description--text span {
+  width: calc(55% - 100px);
+  margin: 50px;
 }
 
 body .availability {
@@ -208,6 +234,29 @@ body footer {
   background-color: #123;
 }
 
+body .phone {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #f44336;
+  border-radius: 50%;
+}
+
+body .phone .fa-phone {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #F1F1F1;
+  /* transition: 5s; */
+  -webkit-animation: phone 6s infinite linear;
+          animation: phone 6s infinite linear;
+}
+
 @-webkit-keyframes arrow {
   0% {
     top: 0px;
@@ -229,6 +278,108 @@ body footer {
   }
   100% {
     top: 0px;
+  }
+}
+
+@-webkit-keyframes phone {
+  88% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  89% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  90% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  91% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  92% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  93% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  94% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  95% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  96% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  97% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  98% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  99% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+}
+
+@keyframes phone {
+  88% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  89% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  90% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  91% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  92% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  93% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  94% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  95% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  96% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  97% {
+    -webkit-transform: translate(-55%, -50%);
+            transform: translate(-55%, -50%);
+  }
+  98% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
+  }
+  99% {
+    -webkit-transform: translate(-45%, -50%);
+            transform: translate(-45%, -50%);
   }
 }
 /*# sourceMappingURL=style.css.map */
