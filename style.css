@@ -62,7 +62,6 @@ body .header {
   background-repeat: no-repeat;
   background-position: cemter;
   background-size: cover;
-  overflow: hidden;
 }
 
 body .header .header_txt {
@@ -202,15 +201,51 @@ body .ofert .ofert__description .ofert__description--text span {
   margin: 50px;
 }
 
-body .availability {
-  margin: 50px 10%;
+body .ofert .ofert__description--prices {
+  margin-left: 10%;
   width: 80%;
+  text-align: center;
+}
+
+body .ofert .ofert__description--prices table {
+  margin-left: 50%;
+  margin-top: 50px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+body .ofert .ofert__description--prices table td {
+  padding: 20px;
+  border: 1px solid #F1F1F1;
+  border: 1px 1px 0px 1px;
+}
+
+body .availability {
+  margin: 50px 0%;
+  width: 100%;
 }
 
 body .availability .availability__form {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 25px;
   background-color: #f4f4f4;
   border-radius: 5px;
+}
+
+body .availability .availability__form input, body .availability .availability__form button, body .availability .availability__form select {
+  padding: 5px;
+  margin: 10px 30%;
+  width: 40%;
+  text-align: center;
+  border: 1px solid #F1F1F1;
+  border-radius: 10px;
 }
 
 body .about {
