@@ -62,7 +62,6 @@ body .header {
   background-repeat: no-repeat;
   background-position: cemter;
   background-size: cover;
-  overflow: hidden;
 }
 
 body .header .header_txt {
