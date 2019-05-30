@@ -1,0 +1,149 @@
+body
+    margin: 0
+    overflow-x: hidden
+    .menu
+        position: fixed
+        width: 100vw
+        top: 0
+        display: flex
+        justify-content: space-around
+        padding: 15px 15px 0px 15px
+        z-index: 2
+        color: #2a353f
+        background-color: #fff
+        border-top: 2px solid #f44336
+        border-bottom:  1px solid #F1F1F1
+        ul
+            list-style-type: none
+            display: flex
+            right: 0
+            li
+                margin-left: 25px
+                font-weight: 600
+                font-family: 'Open Sans', sans-serif
+                letter-spacing: 0px
+                cursor: pointer
+                // border: 1px solid #F1F1F1
+                &:hover
+                    color: #f44336
+                ul
+                    display: none
+                    li
+                        &:hover
+                            color: #f44336
+                    
+                &:hover>ul
+                    display: block
+    img
+        width: 200px
+    .header
+        height: 80vh
+        width: 100vw
+        // background-image: url("../kamper.jpg")
+        background-repeat: no-repeat
+        background-position: cemter
+        background-size: cover
+        overflow: hidden
+        .header_txt
+            position: absolute
+            font-size: 50px
+            z-index: 2
+            top: 40%
+            left: 50%
+            transform: translate(-50%,-50%)
+            color: #fff
+        .arrow 
+            position: absolute
+            color: #000
+            font-size: 50px
+            z-index: 2
+            bottom: 20px
+            left: 50%
+            width: 64px
+            height: 64px
+            transition: 0.2s
+            transform: translate(-50%, -50%)
+            // background-color: #123
+            .fa-angle-down 
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                animation: arrow 1.5s infinite linear
+                transition: 0.2s
+
+            &:hover 
+            cursor: pointer
+    .ofert
+        // background: linear-gradient(to bottom, #eff2f4 0%, #fdfefe 100%)
+        padding-top: 100px
+        .ofert__choose
+            display: flex
+            margin-left: 50%
+            transform: translateX(-50%)
+            span
+                padding: 20px 60px
+                border: 1px solid #F1F1F1
+                cursor: pointer
+            .Carthago
+                border: 2px solid gray
+        .ofert__box
+            display: flex
+            width: 80%
+            // box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75)
+            padding: 15px
+            margin: 50px 10% 
+            span
+                // margin-top: 50px
+                margin-left: 50px
+                width: calc(55% - 50px)
+            img
+                width: 45%
+                height: 45%
+            button
+                background-color: #2a353f
+                color: #fbf9f9
+                border: 0px
+                border-radius: 3px
+                padding: 15px
+                display: block
+            .ofert__box--icon
+                i
+                    margin: 15px 15px 15px 0
+                    font-size: 20px
+        .ofert__details
+            margin-left: 10%
+            width: 80%
+            display: flex
+            flex-wrap: wrap
+            span
+                width: 30%
+                margin-right: 3%
+                padding: 5px
+                border-bottom: 1px solid black
+    .availability
+        margin-left: 10%
+        width: 80%
+        .availability__form
+            padding: 25px
+            background-color: #f4f4f4
+            border-radius: 5px
+    .about
+        display: flex
+        margin: 30px 10%  
+        width: 80%
+        .about__text
+            width: calc(50% - 50px)
+            margin-right: 50px
+        iframe
+            width: 50%
+    footer
+        background-color: #123
+@keyframes arrow 
+  0% 
+    top: 0px
+  
+  50% 
+    top: 20px
+  
+  100% 
+    top: 0px
