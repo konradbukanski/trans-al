@@ -57,7 +57,7 @@ body img {
 }
 
 body .header {
-  height: 80vh;
+  min-height: 80vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-position: cemter;
@@ -110,7 +110,7 @@ body .ofert .ofert__choose {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 50%;
+  margin-left: 45%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -217,7 +217,20 @@ body .ofert .ofert__description--prices table {
 body .ofert .ofert__description--prices table td {
   padding: 20px;
   border: 1px solid #F1F1F1;
-  border: 1px 1px 0px 1px;
+}
+
+body .ofert .ofert__description--prices table td span {
+  position: absolute;
+  top: -40px;
+  right: 200px;
+  padding: 15px;
+  background-color: #ccc;
+  border-radius: 15px;
+  display: none;
+}
+
+body .ofert .ofert__description--prices table td .fa-info-circle:hover > span {
+  display: block;
 }
 
 body .availability {

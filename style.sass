@@ -37,7 +37,7 @@ body
     img
         width: 200px
     .header
-        height: 80vh
+        min-height: 80vh
         width: 100vw
         // background-image: url("../kamper.jpg")
         background-repeat: no-repeat
@@ -78,7 +78,7 @@ body
         padding-top: 100px
         .ofert__choose
             display: flex
-            margin-left: 50%
+            margin-left: 45%
             transform: translateX(-50%)
             span
                 padding: 20px 60px
@@ -145,9 +145,24 @@ body
                 margin-top: 50px
                 transform: translateX(-50%)
                 td
-                    padding: 20px
-                    border: 1px solid #F1F1F1
-                    border: 1px 1px 0px 1px
+                  padding: 20px
+                  border: 1px solid #F1F1F1
+                  // border: 1px 1px 0px 1px
+                  span
+                    position: absolute
+                    top: -40px
+                    right: 200px
+                    padding: 15px
+                    background-color: #ccc
+                    border-radius: 15px
+                    display: none
+                    // left: 130px
+                  .fa-info-circle
+                    &:hover>span
+                      display: block
+                     
+                    
+
                     
     .availability
         margin: 50px 0% 
