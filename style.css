@@ -221,15 +221,25 @@ body .ofert .ofert__description--prices table td {
 
 body .ofert .ofert__description--prices table td span {
   position: absolute;
-  top: -40px;
-  right: 200px;
+  margin-top: 10px;
+  margin-left: 60px;
   padding: 15px;
-  background-color: #ccc;
+  background-color: #fff;
   border-radius: 15px;
   display: none;
+  border: 1px solid #ccc;
+  min-width: 150px;
 }
 
-body .ofert .ofert__description--prices table td .fa-info-circle:hover > span {
+body .ofert .ofert__description--prices table td span p {
+  border-bottom: 1px solid #ccc;
+}
+
+body .ofert .ofert__description--prices table td .fa-info-circle {
+  cursor: pointer;
+}
+
+body .ofert .ofert__description--prices table td .fa-info-circle:hover + span {
   display: block;
 }
 
@@ -280,6 +290,7 @@ body .about iframe {
 
 body footer {
   background-color: #123;
+  height: 300px;
 }
 
 body .phone {

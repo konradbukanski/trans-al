@@ -150,15 +150,20 @@ body
                   // border: 1px 1px 0px 1px
                   span
                     position: absolute
-                    top: -40px
-                    right: 200px
+                    margin-top: 10px
+                    margin-left: 60px
                     padding: 15px
-                    background-color: #ccc
+                    background-color: #fff
                     border-radius: 15px
                     display: none
+                    border: 1px solid #ccc
+                    min-width: 150px
+                    p
+                      border-bottom: 1px solid #ccc
                     // left: 130px
                   .fa-info-circle
-                    &:hover>span
+                    cursor: pointer
+                    &:hover+span
                       display: block
                      
                     
@@ -192,6 +197,7 @@ body
             width: 50%
     footer
         background-color: #123
+        height: 300px
     .phone
         position: fixed
         bottom: 20px
