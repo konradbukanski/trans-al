@@ -225,15 +225,28 @@ body
               margin-top: 50px
               color: #fff
     .about
-        display: flex
         margin: 30px 10%  
         width: 80%
         .about__text
-            width: calc(50% - 50px)
-            margin: auto
-            text-transform: uppercase
-        iframe
+            margin: 100px 0
+            // text-transform: uppercase
+            text-align: justify  
+        .about__contact
+          display: flex
+          font-size: 20px
+          div
             width: 50%
+            margin: auto
+            p
+              margin: auto
+              width: 50%
+              padding: 10px
+            img
+              margin-bottom: 40px
+              margin-left: 50%
+              transform: translateX(-50%)
+          iframe
+              width: 50%
     footer
         background-color: #123
         height: 300px
