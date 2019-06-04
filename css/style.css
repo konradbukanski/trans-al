@@ -327,11 +327,16 @@ body .about .about__text {
   text-align: justify;
 }
 
+body .about .about__text .logo {
+  display: block;
+  margin: 20px;
+  width: 300px;
+}
+
 body .about .about__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
 }
 
 body .about .about__contact div {
@@ -345,15 +350,17 @@ body .about .about__contact div p {
   padding: 10px;
 }
 
-body .about .about__contact div img {
+body .about .about__contact div iframe {
   margin-bottom: 40px;
   margin-left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  border-radius: 8px;
 }
 
-body .about .about__contact iframe {
+body .about .about__contact img {
   width: 50%;
+  height: 50%;
 }
 
 body footer {
