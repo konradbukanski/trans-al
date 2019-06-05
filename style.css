@@ -102,11 +102,11 @@ body .header .arrow .fa-angle-down {
   transition: 0.2s;
 }
 
-body .ofert {
+body .oferts {
   padding-top: 100px;
 }
 
-body .ofert .ofert__choose {
+body .oferts .ofert__choose {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,7 +115,7 @@ body .ofert .ofert__choose {
   position: relative;
 }
 
-body .ofert .ofert__choose span {
+body .oferts .ofert__choose span {
   padding: 20px 60px;
   border: 1px solid #F1F1F1;
   cursor: pointer;
@@ -123,7 +123,7 @@ body .ofert .ofert__choose span {
   position: relative;
 }
 
-body .ofert .ofert__choose span p {
+body .oferts .ofert__choose span p {
   padding: 5px;
   position: absolute;
   top: 50%;
@@ -135,11 +135,19 @@ body .ofert .ofert__choose span p {
   color: #fff;
 }
 
-body .ofert .ofert__choose .ofert__choose--Carthago {
+body .oferts .ofert__choose .ofert__choose--Carthago {
   border: 2px solid #828186;
 }
 
-body .ofert .ofert__box {
+body .oferts .ofert {
+  display: none;
+}
+
+body .oferts .display {
+  display: inline;
+}
+
+body .oferts .display .ofert__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,17 +156,17 @@ body .ofert .ofert__box {
   margin: 50px 10%;
 }
 
-body .ofert .ofert__box span {
+body .oferts .display .ofert__box span {
   width: calc(55% - 50px);
   margin: auto;
 }
 
-body .ofert .ofert__box img {
+body .oferts .display .ofert__box img {
   width: 45%;
   height: 45%;
 }
 
-body .ofert .ofert__box button {
+body .oferts .display .ofert__box button {
   background-color: #2a353f;
   color: #fbf9f9;
   border: 0px;
@@ -167,12 +175,12 @@ body .ofert .ofert__box button {
   display: block;
 }
 
-body .ofert .ofert__box .ofert__box--icon i {
+body .oferts .display .ofert__box .ofert__box--icon i {
   margin: 15px 15px 15px 0;
   font-size: 20px;
 }
 
-body .ofert .ofert__details {
+body .oferts .ofert__details {
   margin-left: 10%;
   width: 80%;
   display: -webkit-box;
@@ -185,18 +193,18 @@ body .ofert .ofert__details {
           justify-content: space-between;
 }
 
-body .ofert .ofert__details span {
+body .oferts .ofert__details span {
   width: 30%;
   padding: 5px;
   border-bottom: 1px solid black;
 }
 
-body .ofert .ofert__description {
+body .oferts .ofert__description {
   margin: 50px 10%;
   width: 80%;
 }
 
-body .ofert .ofert__description .ofert__description--text {
+body .oferts .ofert__description .ofert__description--text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -204,7 +212,7 @@ body .ofert .ofert__description .ofert__description--text {
   overflow-x: hidden;
 }
 
-body .ofert .ofert__description .ofert__description--text img {
+body .oferts .ofert__description .ofert__description--text img {
   width: 45%;
   height: 45%;
   border-radius: 5px;
@@ -212,30 +220,30 @@ body .ofert .ofert__description .ofert__description--text img {
           box-shadow: 0px -4px 6px -4px rgba(0, 0, 0, 0.75);
 }
 
-body .ofert .ofert__description .ofert__description--text span {
+body .oferts .ofert__description .ofert__description--text span {
   width: calc(55% - 100px);
   margin: auto;
 }
 
-body .ofert .ofert__description--prices {
+body .oferts .ofert__description--prices {
   margin-left: 10%;
   width: 80%;
   text-align: center;
 }
 
-body .ofert .ofert__description--prices table {
+body .oferts .ofert__description--prices table {
   margin-left: 50%;
   margin-top: 50px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 
-body .ofert .ofert__description--prices table td {
+body .oferts .ofert__description--prices table td {
   padding: 20px;
   border: 1px solid #F1F1F1;
 }
 
-body .ofert .ofert__description--prices table td span {
+body .oferts .ofert__description--prices table td span {
   position: absolute;
   margin-top: 10px;
   margin-left: 60px;
@@ -247,15 +255,15 @@ body .ofert .ofert__description--prices table td span {
   min-width: 150px;
 }
 
-body .ofert .ofert__description--prices table td span p {
+body .oferts .ofert__description--prices table td span p {
   border-bottom: 1px solid #ccc;
 }
 
-body .ofert .ofert__description--prices table td .fa-info-circle {
+body .oferts .ofert__description--prices table td .fa-info-circle {
   cursor: pointer;
 }
 
-body .ofert .ofert__description--prices table td .fa-info-circle:hover + span {
+body .oferts .ofert__description--prices table td .fa-info-circle:hover + span {
   display: block;
 }
 
