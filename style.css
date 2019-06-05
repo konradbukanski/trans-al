@@ -126,6 +126,10 @@ body .ofert .ofert__choose span {
 body .ofert .ofert__choose span p {
   padding: 5px;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border-radius: 8px;
   background-color: #014282;
   color: #fff;
