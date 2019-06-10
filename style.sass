@@ -4,6 +4,7 @@ body
     .menu
         position: fixed
         width: 100vw
+        height: 60px
         top: 0
         display: flex
         justify-content: space-around
@@ -13,6 +14,7 @@ body
         background-color: #fff
         border-top: 2px solid #f44336
         border-bottom:  1px solid #F1F1F1
+        transition: 0.2s
         ul
             list-style-type: none
             display: flex
@@ -34,6 +36,8 @@ body
                     
                 &:hover>ul
                     display: block
+    .hide
+      top:-60px
     img
         width: 200px
     .header
@@ -101,8 +105,7 @@ body
                   background-color: #014282
                   color: #fff
                 
-            .ofert__choose--Carthago
-                border: 2px solid #828186
+                
         .ofert
           display: none
         .display
@@ -286,7 +289,7 @@ body
               width: 50%
               height: 50%
     footer
-        background-color: #613e39
+        background-color: #4e4e4e
         padding: 10px
         display: flex
         color: #fff

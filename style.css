@@ -6,6 +6,7 @@ body {
 body .menu {
   position: fixed;
   width: 100vw;
+  height: 60px;
   top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,6 +19,8 @@ body .menu {
   background-color: #fff;
   border-top: 2px solid #f44336;
   border-bottom: 1px solid #F1F1F1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 body .menu ul {
@@ -133,10 +136,6 @@ body .oferts .ofert__choose span p {
   border-radius: 8px;
   background-color: #014282;
   color: #fff;
-}
-
-body .oferts .ofert__choose .ofert__choose--Carthago {
-  border: 2px solid #828186;
 }
 
 body .oferts .ofert {
@@ -405,7 +404,7 @@ body .about .about__contact img {
 }
 
 body footer {
-  background-color: #613e39;
+  background-color: #4e4e4e;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
