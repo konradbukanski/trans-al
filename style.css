@@ -39,6 +39,15 @@ body .menu ul li {
   cursor: pointer;
 }
 
+body .menu ul li a {
+  text-decoration: none;
+  color: #2a353f;
+}
+
+body .menu ul li a:hover {
+  color: #f44336;
+}
+
 body .menu ul li:hover {
   color: #f44336;
 }
@@ -110,23 +119,34 @@ body .oferts {
 }
 
 body .oferts .ofert__choose {
-  margin: 0 auto;
+  margin: 0 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  width: 80%;
   position: relative;
 }
 
-body .oferts .ofert__choose span {
+body .oferts .ofert__choose .ofert__choose--items {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body .oferts .ofert__choose .ofert__choose--items span {
+  min-width: calc(100% / 3);
   padding: 20px 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid #F1F1F1;
   cursor: pointer;
   text-align: center;
-  position: relative;
 }
 
-body .oferts .ofert__choose span p {
+body .oferts .ofert__choose .ofert__choose--items span p {
   padding: 5px;
   position: absolute;
   top: 50%;
@@ -136,6 +156,14 @@ body .oferts .ofert__choose span p {
   border-radius: 8px;
   background-color: #014282;
   color: #fff;
+}
+
+body .oferts .ofert__choose i {
+  width: 10%;
+  text-align: center;
+  margin: auto;
+  font-size: 40px;
+  cursor: pointer;
 }
 
 body .oferts .ofert {
@@ -161,8 +189,9 @@ body .oferts .display .ofert__box span {
 }
 
 body .oferts .display .ofert__box img {
-  width: 45%;
-  height: 45%;
+  margin: auto;
+  width: 30%;
+  height: 30%;
 }
 
 body .oferts .display .ofert__box button {

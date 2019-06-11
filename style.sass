@@ -25,6 +25,11 @@ body
                 font-family: 'Open Sans', sans-serif
                 letter-spacing: 0px
                 cursor: pointer
+                a
+                  text-decoration: none
+                  color: #2a353f
+                  &:hover
+                    color: #f44336
                 // border: 1px solid #F1F1F1
                 &:hover
                     color: #f44336
@@ -36,8 +41,8 @@ body
                     
                 &:hover>ul
                     display: block
-    .hide
-      top:-60px
+    // .hide
+    //   top:-60px
     img
         width: 200px
     .header
@@ -81,31 +86,42 @@ body
         // background: linear-gradient(to bottom, #eff2f4 0%, #fdfefe 100%)
         padding-top: 100px
         .ofert__choose
-            margin: 0 auto
+            margin: 0 10%
             display: flex
-            width: 60%
+            width: 80%
+            
             // margin-left: 45%
             // transform: translateX(-50%)
             position: relative
-            span
-                // width: 20%
-                padding: 20px 60px
-                border: 1px solid #F1F1F1
-                cursor: pointer
-                text-align: center
+            .ofert__choose--items
+                width: 80%
+                display: flex
                 position: relative
-                p
-                  padding: 5px
-                  position: absolute
-                  top: 50%
-                  left: 50%
-                  transform: translate(-50%,-50%)
-                  // border: 1px solid gray
-                  border-radius: 8px
-                  background-color: #014282
-                  color: #fff
-                
-                
+                overflow-x: hidden
+                span
+                    min-width: calc(100% / 3)
+                    padding: 20px 60px
+                    box-sizing: border-box
+                    border: 1px solid #F1F1F1
+                    cursor: pointer
+                    text-align: center
+                    // position: relative
+                    p
+                        padding: 5px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                        // border: 1px solid gray
+                        border-radius: 8px
+                        background-color: #014282
+                        color: #fff
+            i
+                width: 10%
+                text-align: center 
+                margin: auto 
+                font-size: 40px   
+                cursor: pointer    
         .ofert
           display: none
         .display
@@ -113,6 +129,7 @@ body
           .ofert__box
               display: flex
               width: 80%
+              
               // box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75)
               padding: 15px
               margin: 50px 10% 
