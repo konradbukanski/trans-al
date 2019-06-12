@@ -137,13 +137,41 @@ const cars = [
   }
 ];
 
-for (i = 0; i < cars.length; i++) {
-  const ofert = document.createElement("span");
-  const img = document.createElement("img");
-  img.setAttribute(`src`, `../../img/samochody/${cars[i].model}.png`);
-  const node = document.createTextNode(cars[i].brand + " " + cars[i].model);
-  ofert.appendChild(node);
+// for (i = 0; i < cars.length; i++) {
+//   const ofert = document.createElement("span");
+//   const img = document.createElement("img");
+//   img.setAttribute(`src`, `../../img/samochody/${cars[i].model}.png`);
+//   const node = document.createTextNode(cars[i].brand + " " + cars[i].model);
+//   ofert.appendChild(node);
 
-  document.querySelector(".ofert__choose--items").appendChild(ofert);
-  ofert.appendChild(img);
+//   document.querySelector(".ofert__choose--items").appendChild(ofert);
+//   ofert.appendChild(img);
+// }
+
+for (i = 0; i < cars.length; i++) {
+  const tr = document.createElement("tr");
+  const td1 = document.createElement("td");
+  const td2 = document.createElement("td");
+  const td3 = document.createElement("td");
+  const td4 = document.createElement("td");
+  const td5 = document.createElement("td");
+
+  td1.innerHTML = cars[i].brand + " " + cars[i].model;
+  td2.innerHTML = cars[i].cena1;
+  td3.innerHTML = cars[i].cena2;
+  td4.innerHTML = cars[i].cena3;
+  td5.innerHTML = cars[i].cena4;
+
+  tr.appendChild(td1);
+  tr.appendChild(td2);
+  tr.appendChild(td3);
+  tr.appendChild(td4);
+  tr.appendChild(td5);
+
+  document.querySelector(".ofert__description--table").appendChild(tr);
 }
+
+const ofert = document.createElement("div");
+ofert.className = "ofert";
+ofert.innerHTML = cars[1].brand;
+document.querySelector(".ofert__active").appendChild(ofert);
