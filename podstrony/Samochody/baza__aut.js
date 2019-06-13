@@ -137,16 +137,20 @@ const cars = [
   }
 ];
 
-// for (i = 0; i < cars.length; i++) {
-//   const ofert = document.createElement("span");
-//   const img = document.createElement("img");
-//   img.setAttribute(`src`, `../../img/samochody/${cars[i].model}.png`);
-//   const node = document.createTextNode(cars[i].brand + " " + cars[i].model);
-//   ofert.appendChild(node);
+for (i = 0; i < cars.length; i++) {
+  const ofert = document.createElement("div");
+  ofert.className = "description__car";
+  const left = document.createElement("div");
+  left.className = "description__car--left";
+  const img = document.createElement("img");
+  img.setAttribute(`src`, `../../img/samochody/${cars[i].model}.png`);
+  // const node = document.createTextNode(cars[i].brand + " " + cars[i].model);
+  // ofert.appendChild(node);
 
-//   document.querySelector(".ofert__choose--items").appendChild(ofert);
-//   ofert.appendChild(img);
-// }
+  document.querySelector(".description").appendChild(ofert);
+  ofert.appendChild(left);
+  left.appendChild(img);
+}
 
 for (i = 0; i < cars.length; i++) {
   const tr = document.createElement("tr");

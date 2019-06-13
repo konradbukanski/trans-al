@@ -1,0 +1,26 @@
+.description {
+  margin-top: 100px;
+}
+
+.description .description__car {
+  width: 200%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description .description__car .description__car--left {
+  width: 40%;
+  margin: 100px 5%;
+}
+
+.description .description__car .description__car--left img {
+  width: 50%;
+}
+
+.description .description__car .description__car--right {
+  width: 40%;
+  margin: 0 5%;
+  background-color: #213;
+}
+/*# sourceMappingURL=cars.css.map */
