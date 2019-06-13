@@ -143,7 +143,7 @@ for (i = 0; i < cars.length; i++) {
   const left = document.createElement("div");
   left.className = "description__car--left";
   const img = document.createElement("img");
-  img.setAttribute(`src`, `../../img/samochody/${cars[i].model}.png`);
+  img.setAttribute(`src`, `../../img/samochody/${cars[i].model}.jpg`);
   // const node = document.createTextNode(cars[i].brand + " " + cars[i].model);
   // ofert.appendChild(node);
 
