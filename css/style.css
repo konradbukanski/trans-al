@@ -21,6 +21,7 @@ body .menu {
   border-bottom: 1px solid #F1F1F1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  font-weight: 100;
 }
 
 body .menu ul {
@@ -316,16 +317,16 @@ body .availability .availability__form {
   width: 60%;
 }
 
-body .availability .availability__form .form__name {
-  border-bottom: 2px solid #f44336;
-}
-
 body .availability .availability__form span {
   display: block;
   margin: auto;
   text-align: left;
   color: #d4d4d4;
   width: 80%;
+}
+
+body .availability .availability__form span:visited {
+  border-bottom: 2px solid #f44336;
 }
 
 body .availability .availability__form p {
