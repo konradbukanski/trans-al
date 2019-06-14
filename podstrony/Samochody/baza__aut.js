@@ -137,20 +137,29 @@ const cars = [
   }
 ];
 
-for (i = 0; i < cars.length; i++) {
-  const ofert = document.createElement("div");
-  ofert.className = "description__car";
-  const left = document.createElement("div");
-  left.className = "description__car--left";
-  const img = document.createElement("img");
-  img.setAttribute(`src`, `../../img/samochody/${cars[i].model}.jpg`);
-  // const node = document.createTextNode(cars[i].brand + " " + cars[i].model);
-  // ofert.appendChild(node);
+document
+  .querySelector(".description__car--btn")
+  .addEventListener("click", () => {
+    console.log("click");
+    document
+      .querySelector(".description__car--more")
+      .classList.add("show__more");
+  });
 
-  document.querySelector(".description").appendChild(ofert);
-  ofert.appendChild(left);
-  left.appendChild(img);
-}
+// for (i = 0; i < cars.length; i++) {
+//   const ofert = document.createElement("div");
+//   ofert.className = "description__car";
+//   const left = document.createElement("div");
+//   left.className = "description__car--main";
+//   const img = document.createElement("img");
+//   img.setAttribute(`src`, `../../img/samochody/${cars[i].model}.jpg`);
+//   // const node = document.createTextNode(cars[i].brand + " " + cars[i].model);
+//   // ofert.appendChild(node);
+
+//   document.querySelector(".description").appendChild(ofert);
+//   ofert.appendChild(left);
+//   left.appendChild(img);
+// }
 
 for (i = 0; i < cars.length; i++) {
   const tr = document.createElement("tr");

@@ -32,7 +32,7 @@
 }
 
 .description .description__car {
-  width: 100%;
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,62 +40,75 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 50vh;
+  min-height: 50vh;
   background-color: #f5f5f5;
   position: relative;
-}
-
-.description .description__car .description__car--left {
-  width: 80%;
-  height: 80%;
-  margin: 50px 10% 0px 10%;
-  background-color: #fff;
-  position: relative;
-  border-radius: 10px;
   border: 1px solid #dcdcdc;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 50px 10% 0px 10%;
+  padding: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
-.description .description__car .description__car--left img {
+.description .description__car .description__car--main {
+  position: relative;
+  padding: 20px;
+}
+
+.description .description__car .description__car--main img {
   position: absolute;
-  width: 30%;
+  width: 35%;
   top: 50%;
   left: 10%;
+  padding: 50px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 
-.description .description__car .description__car--left .description__car--details {
+.description .description__car .description__car--main .description__car--details {
   min-width: 45%;
   margin-left: 50%;
 }
 
-.description .description__car .description__car--left .description__car--details h2 {
+.description .description__car .description__car--main .description__car--details h2 {
   margin-top: 40px;
 }
 
-.description .description__car .description__car--left .description__car--details h4 {
+.description .description__car .description__car--main .description__car--details h4 {
   margin-top: 20px;
 }
 
-.description .description__car .description__car--left .description__car--details i {
+.description .description__car .description__car--main .description__car--details i {
   font-size: 20px;
   margin-left: 7px;
+  padding: 10px;
 }
 
-.description .description__car .description__car--left .description__car--details .description__car--details--price {
-  padding: 20px;
+.description .description__car .description__car--main .description__car--details .description__car--details--price {
+  margin: 40px 150px;
   display: block;
+  font-size: 35px;
+  font-weight: bold;
+  color: #014282;
 }
 
-.description .description__car .description__car--left .description__car--details .description__car--details--price:before {
+.description .description__car .description__car--main .description__car--details .description__car--details--price:before {
   content: "od ";
+  font-size: 15px;
+  color: #000;
 }
 
-.description .description__car .description__car--left .description__car--details .description__car--details--price:after {
+.description .description__car .description__car--main .description__car--details .description__car--details--price:after {
   content: " /doba";
+  font-size: 13px;
+  color: #000;
 }
 
-.description .description__car .description__car--left .description__car--details button {
+.description .description__car .description__car--main .description__car--details button {
   -webkit-box-shadow: 4px 6px 21px -10px rgba(0, 0, 0, 0.75);
           box-shadow: 4px 6px 21px -10px rgba(0, 0, 0, 0.75);
   padding: 20px 40px;
@@ -103,15 +116,42 @@
   background-color: #f44336;
   border-radius: 8px;
   color: #fff;
-  position: absolute;
+  float: right;
   bottom: 60px;
-  right: 60px;
+  margin-right: 60px;
   text-transform: uppercase;
 }
 
-.description .description__car .description__car--left .description__car--right {
-  width: 40%;
+.description .description__car .description__car--main .description__car--details button i {
+  padding: 0;
+}
+
+.description .description__car .description__car--more {
   margin: 0 5%;
-  background-color: #213;
+  min-height: 300px;
+  display: none;
+}
+
+.description .description__car .show__more {
+  display: block;
+}
+
+.description .description__car .show__more .description__car--more--galery {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description .description__car .show__more .description__car--more--galery img {
+  width: 30%;
+  height: 30%;
+  padding: 1%;
+  border-radius: 15px;
 }
 /*# sourceMappingURL=cars.css.map */
