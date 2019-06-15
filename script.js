@@ -38,3 +38,19 @@ document.addEventListener("scroll", () => {
     document.querySelector(".menu").className.add("hide");
   }
 });
+document.querySelector(".menu__prices").addEventListener("click", () => {
+  document
+    .querySelector(".ofert__description--prices")
+    .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+});
+document.querySelector(".menu__availability").addEventListener("click", () => {
+  document
+    .querySelector(".availability")
+    .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+});
+
+document.querySelector(".menu__about").addEventListener("click", () => {
+  document
+    .querySelector(".about")
+    .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+});

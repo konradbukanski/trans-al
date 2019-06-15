@@ -137,6 +137,23 @@ const cars = [
   }
 ];
 
+document.querySelector(".menu__prices").addEventListener("click", () => {
+  document
+    .querySelector(".ofert__description--prices")
+    .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+});
+document.querySelector(".menu__availability").addEventListener("click", () => {
+  document
+    .querySelector(".availability")
+    .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+});
+
+document.querySelector(".menu__about").addEventListener("click", () => {
+  document
+    .querySelector(".about")
+    .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+});
+
 document
   .querySelector(".description__car--btn")
   .addEventListener("click", () => {
@@ -146,21 +163,25 @@ document
       .classList.add("show__more");
   });
 
-// for (i = 0; i < cars.length; i++) {
-//   const ofert = document.createElement("div");
-//   ofert.className = "description__car";
-//   const left = document.createElement("div");
-//   left.className = "description__car--main";
-//   const img = document.createElement("img");
-//   img.setAttribute(`src`, `../../img/samochody/${cars[i].model}.jpg`);
-//   // const node = document.createTextNode(cars[i].brand + " " + cars[i].model);
-//   // ofert.appendChild(node);
+for (i = 0; i < cars.length; i++) {
+  const description = document.createElement("div");
+  description.className = "description__car";
 
-//   document.querySelector(".description").appendChild(ofert);
-//   ofert.appendChild(left);
-//   left.appendChild(img);
-// }
+  const main = document.createElement("div");
+  main.className = "description__car--main";
+  const img = document.createElement("img");
+  img.setAttribute(`src`, `../../img/samochody/${cars[i].model}.jpg`);
+  main.appendChild(img);
 
+  const details = document.createElement("div");
+  details.className = "description__car--details";
+  const h2 = document.createElement("h2");
+  h2.innerHTML = "cars[i].type";
+  details.appendChild(h2);
+
+  description.appendChild(main);
+  main.appendChild(details);
+}
 for (i = 0; i < cars.length; i++) {
   const tr = document.createElement("tr");
   const td1 = document.createElement("td");

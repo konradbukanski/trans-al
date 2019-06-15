@@ -1,7 +1,7 @@
 .header_car {
   margin-top: 60px;
   height: 40vh;
-  background-image: url("../../road.jpg");
+  background-image: url("../../road1.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -130,6 +130,8 @@
   margin: 0 5%;
   min-height: 300px;
   display: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .description .description__car .show__more {

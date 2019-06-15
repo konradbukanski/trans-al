@@ -121,9 +121,7 @@ body .oferts {
 
 body .oferts .ofert__choose {
   margin: 0 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   width: 80%;
   position: relative;
 }
