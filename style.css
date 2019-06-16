@@ -165,10 +165,6 @@ body .oferts .ofert__choose i {
   cursor: pointer;
 }
 
-body .oferts .ofert {
-  display: none;
-}
-
 body .oferts .display {
   display: inline;
 }
@@ -179,7 +175,7 @@ body .oferts .display .ofert__box {
   display: flex;
   width: 80%;
   padding: 15px;
-  margin: 50px 10%;
+  margin: 50px auto;
 }
 
 body .oferts .display .ofert__box span {
@@ -226,11 +222,15 @@ body .oferts .ofert__details span {
   display: flex;
   width: 30%;
   padding: 5px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d4d4d4;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body .oferts .ofert__details span span {
   border: 0;
+  width: 50%;
 }
 
 body .oferts .ofert__description {
