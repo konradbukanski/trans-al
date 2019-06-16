@@ -164,6 +164,35 @@ document
   });
 
 for (i = 0; i < cars.length; i++) {
+  const tr = document.createElement("tr");
+  const td1 = document.createElement("td");
+  const td2 = document.createElement("td");
+  const td3 = document.createElement("td");
+  const td4 = document.createElement("td");
+  const td5 = document.createElement("td");
+
+  td1.innerHTML = cars[i].brand + " " + cars[i].model;
+  td2.innerHTML = cars[i].cena1 + " zł";
+  td3.innerHTML = cars[i].cena2 + " zł";
+  td4.innerHTML = cars[i].cena3 + " zł";
+  td5.innerHTML = cars[i].cena4 + " zł";
+
+  tr.appendChild(td1);
+  tr.appendChild(td2);
+  tr.appendChild(td3);
+  tr.appendChild(td4);
+  tr.appendChild(td5);
+
+  document.querySelector(".ofert__description--table").appendChild(tr);
+}
+
+// const ofert = document.createElement("div");
+// ofert.className = "ofert";
+// ofert.innerHTML = cars[1].brand;
+// document.querySelector(".ofert__active").appendChild(ofert);
+
+for (i = 0; i < cars.length; i++) {
+  console.log("działa");
   const description = document.createElement("div");
   description.className = "description__car";
 
@@ -176,36 +205,43 @@ for (i = 0; i < cars.length; i++) {
   const details = document.createElement("div");
   details.className = "description__car--details";
   const h2 = document.createElement("h2");
-  h2.innerHTML = "cars[i].type";
+  h2.innerHTML = cars[i].type;
   details.appendChild(h2);
 
   description.appendChild(main);
+  const p = document.createElement("p");
+  p.innerHTML = cars[i].brand + " " + cars[i].model;
+  const span = document.createElement("span");
+
+  const a1 = document.createElement("a");
+  a1.className = "fas fa-users";
+  a1.innerHTML = " x " + cars[i].miejca;
+  span.appendChild(a1);
+  const a2 = document.createElement("a");
+  a2.className = "fas fa-suitcase-rolling";
+  a2.innerHTML = " x " + cars[i].bagaz;
+  span.appendChild(a2);
+  const a3 = document.createElement("a");
+  a3.className = "fas fa-users";
+  a3.innerHTML = " x " + cars[i].miejca;
+  span.appendChild(a3);
+  const a4 = document.createElement("a");
+  a4.className = "fas fa-suitcase-rolling";
+  a4.innerHTML = " x " + cars[i].bagaz;
+  span.appendChild(a4);
+  details.appendChild(p);
+  details.appendChild(span);
   main.appendChild(details);
+
+  const price = document.createElement("span");
+  price.innerHTML = cars[i].cena1;
+  price.className = "description__car--details--price";
+
+  const button = document.createElement("button");
+  button.className = "description__car--btn";
+  button.innerHTML = "Zobacz więcej";
+  details.appendChild(price);
+  details.appendChild(button);
+
+  document.querySelector(".description").appendChild(description);
 }
-for (i = 0; i < cars.length; i++) {
-  const tr = document.createElement("tr");
-  const td1 = document.createElement("td");
-  const td2 = document.createElement("td");
-  const td3 = document.createElement("td");
-  const td4 = document.createElement("td");
-  const td5 = document.createElement("td");
-
-  td1.innerHTML = cars[i].brand + " " + cars[i].model;
-  td2.innerHTML = cars[i].cena1;
-  td3.innerHTML = cars[i].cena2;
-  td4.innerHTML = cars[i].cena3;
-  td5.innerHTML = cars[i].cena4;
-
-  tr.appendChild(td1);
-  tr.appendChild(td2);
-  tr.appendChild(td3);
-  tr.appendChild(td4);
-  tr.appendChild(td5);
-
-  document.querySelector(".ofert__description--table").appendChild(tr);
-}
-
-const ofert = document.createElement("div");
-ofert.className = "ofert";
-ofert.innerHTML = cars[1].brand;
-document.querySelector(".ofert__active").appendChild(ofert);
