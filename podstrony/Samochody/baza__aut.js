@@ -213,19 +213,19 @@ for (i = 0; i < cars.length; i++) {
   p.innerHTML = cars[i].brand + " " + cars[i].model;
   const span = document.createElement("span");
 
-  const a1 = document.createElement("a");
+  const a1 = document.createElement("i");
   a1.className = "fas fa-users";
   a1.innerHTML = " x " + cars[i].miejca;
   span.appendChild(a1);
-  const a2 = document.createElement("a");
+  const a2 = document.createElement("i");
   a2.className = "fas fa-suitcase-rolling";
   a2.innerHTML = " x " + cars[i].bagaz;
   span.appendChild(a2);
-  const a3 = document.createElement("a");
+  const a3 = document.createElement("i");
   a3.className = "fas fa-users";
   a3.innerHTML = " x " + cars[i].miejca;
   span.appendChild(a3);
-  const a4 = document.createElement("a");
+  const a4 = document.createElement("i");
   a4.className = "fas fa-suitcase-rolling";
   a4.innerHTML = " x " + cars[i].bagaz;
   span.appendChild(a4);

@@ -76,6 +76,7 @@
 
 .description .description__car .description__car--main .description__car--details h2 {
   margin-top: 40px;
+  text-transform: uppercase;
 }
 
 .description .description__car .description__car--main .description__car--details h4 {
