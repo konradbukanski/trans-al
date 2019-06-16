@@ -221,9 +221,16 @@ body .oferts .ofert__details {
 }
 
 body .oferts .ofert__details span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 30%;
   padding: 5px;
   border-bottom: 1px solid black;
+}
+
+body .oferts .ofert__details span span {
+  border: 0;
 }
 
 body .oferts .ofert__description {
