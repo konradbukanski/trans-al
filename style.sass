@@ -1,4 +1,12 @@
-body
+$moblileS: 425px;
+$moblileS: 768px;
+$laptopS: 1024px;
+$laptopL: 1440px;
+
+
+
+
+  body
     margin: 0
     overflow-x: hidden
     .menu
@@ -16,10 +24,13 @@ body
         border-bottom:  1px solid #F1F1F1
         transition: 0.2s
         font-weight: 100
+        
         ul
             list-style-type: none
             display: flex
             right: 0
+            @media (min-width: 480px)
+            display: none
             li
                 margin-left: 25px
                 font-weight: 600

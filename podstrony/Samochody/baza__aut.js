@@ -234,7 +234,7 @@ for (i = 0; i < cars.length; i++) {
   main.appendChild(details);
 
   const price = document.createElement("span");
-  price.innerHTML = cars[i].cena1;
+  price.innerHTML = cars[i].cena4;
   price.className = "description__car--details--price";
 
   const button = document.createElement("button");
