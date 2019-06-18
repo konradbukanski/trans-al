@@ -3,6 +3,7 @@ const cars = [
     brand: "Skoda",
     model: "Citigo",
     type: "mini",
+    images: ["img1", "img2", "img3", "img4", "img5", "img6"],
     rok: 2019,
     miejca: 4,
     wiek: 23,
@@ -20,6 +21,7 @@ const cars = [
     brand: "Skoda",
     model: "Fabia Combi",
     type: "Compact",
+    images: ["img1", "img2", "img3", "img4", "img5", "img6"],
     rok: 2019,
     miejca: 5,
     wiek: 23,
@@ -37,6 +39,7 @@ const cars = [
     brand: "Skoda",
     model: "Karoq",
     type: "SUV",
+    images: ["img1", "img2", "img3", "img4", "img5", "img6"],
     rok: 2019,
     miejca: 5,
     wiek: 23,
@@ -54,6 +57,7 @@ const cars = [
     brand: "vw",
     model: "Caddy",
     type: "minivan",
+    images: ["img1", "img2", "img3", "img4", "img5", "img6"],
     rok: 2019,
     miejca: 7,
     wiek: 27,
@@ -71,6 +75,7 @@ const cars = [
     brand: "Audi",
     model: "A6",
     type: "premium",
+    images: ["img1", "img2", "img3", "img4", "img5", "img6"],
     rok: 2018 / 19,
     miejca: 5,
     wiek: 27,
@@ -88,6 +93,7 @@ const cars = [
     brand: "VW",
     model: "Caravelle",
     type: "BUS",
+    images: ["img1", "img2", "img3", "img4", "img5", "img6"],
     rok: 2018 / 19,
     miejca: 8,
     wiek: 27,
@@ -105,6 +111,7 @@ const cars = [
     brand: "VW",
     model: "Crafter",
     type: "Furgon",
+    images: ["img1", "img2", "img3", "img4", "img5", "img6"],
     rok: 2019,
     miejca: 3,
     wiek: 25,
@@ -122,6 +129,7 @@ const cars = [
     brand: "BMW",
     model: "750 L",
     type: "Luxury",
+    images: ["img1", "img2", "img3", "img4", "img5", "img6"],
     rok: 2019,
     miejca: 4,
     wiek: "-",
@@ -244,4 +252,23 @@ for (i = 0; i < cars.length; i++) {
   details.appendChild(button);
 
   document.querySelector(".description").appendChild(description);
+
+  const galery = document.createElement("div");
+  galery.className = "description__car--more";
+  const photos = document.createElement("div");
+  photos.className = "description__car--more--galery";
+  const galery_h3 = document.createElement("h3");
+  galery_h3.innerHTML = "Galeria";
+  for (j = 0; j < cars[i].images.length; j++) {
+    console.log(j);
+    const image = document.createElement("img");
+    image.setAttribute(
+      `src`,
+      `../../img/samochody/${cars[i].model}/${cars[i].images[j]}.jpg`
+    );
+    photos.appendChild(image);
+  }
+  galery.appendChild(galery_h3);
+  galery.appendChild(photos);
+  description.appendChild(galery);
 }

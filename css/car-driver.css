@@ -1,0 +1,122 @@
+.header {
+  background-color: #234;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  height: 600px;
+  position: relative;
+}
+
+.header .header__left {
+  width: 50%;
+  background-color: #125;
+  color: #fff;
+  position: relative;
+}
+
+.header .header__left div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.header .header__left div h2 {
+  padding: 20px;
+}
+
+.header .header__right {
+  width: 50%;
+  background-color: #545;
+  background-image: url("../img/driver.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.header span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cars {
+  background-color: #123;
+  height: 800px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cars h2 {
+  padding-top: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.cars span {
+  margin: 50px 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 150px;
+  height: 150px;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid red;
+  -webkit-box-shadow: 0px 2px 19px 0px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 19px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cars span img {
+  margin: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cars .cars__choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.cars .cars__choose div {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.cars .cars__choose div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.cars .cars__choose .cars__choose--two {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=car-driver.css.map */
