@@ -318,3 +318,11 @@ document.querySelectorAll(".description__car--btn").forEach(item => {
     });
   });
 });
+
+for (i = 0; i < cars.length; i++) {
+  console.log("tasr");
+  const x = document.querySelector(".availability__form select");
+  const option = document.createElement("option");
+  option.text = cars[i].model;
+  x.add(option);
+}

@@ -486,6 +486,7 @@ body .availability .availability__form input, body .availability .availability__
   margin: auto;
   outline: none;
   color: #fff;
+  background-color: #404b5f;
 }
 
 body .availability .availability__form button {
