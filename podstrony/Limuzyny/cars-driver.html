@@ -26,6 +26,7 @@
     />
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/car-driver.css" />
+    <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -41,8 +42,13 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" href="../../img/logosmall.jpg" />
+    <title>Trans-Al Rentals</title>
+    <script src="js/lightgallery.min.js"></script>
 
-    <title>Document</title>
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
   </head>
   <body>
     <section class="menu">
@@ -68,7 +74,7 @@
     <section class="header">
       <div class="header__left">
         <div>
-          <h2>tytul tytul</h2>
+          <h2>Potrzebujesz kierowcy?</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae
             pariatur in expedita quisquam ratione? Suscipit tenetur consequatur
@@ -78,27 +84,251 @@
         </div>
       </div>
       <div class="header__right"></div>
-      <span></span>
+      <span><i class="fas fa-car"></i></span>
     </section>
     <section class="cars">
       <h2>Poznaj naszą ofertę</h2>
-      <span>
-        <img src="../../img/samochody/A6.jpg" alt="" />
-      </span>
+      <!-- <span>
+        <img src="../../img/tie.jpg" alt="" />
+      </span> -->
 
       <div class="cars__choose">
         <div class="cars__choose--one">
-          <img src="../../img/samochody/A6.jpg" alt="" />
+          <img src="../../img/samochody/A6.png" alt="" />
+          <p>Audi A6</p>
         </div>
         <div class="cars__choose--two">
-          <img src="../../img/samochody/750 L.jpg" alt="" />
+          <img src="../../img/samochody/750 L.png" alt="" />
+          <P>BMW 750 L</P>
         </div>
         <div class="cars__choose--tree">
-          <img src="../../img/samochody/A6.jpg" alt="" />
+          <img src="../../img/samochody/Sprinter.png" alt="" />
+          <P>Mercedes Sprinter</P>
+        </div>
+      </div>
+      <!-- <button>Dalej</button> -->
+    </section>
+    <section class="description">
+      <div class="description__ofert audi">
+        <h1>Audi A6</h1>
+        <h2>Opis oferty</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+        explicabo eaque minima distinctio cum praesentium perspiciatis
+        cupiditate quisquam laboriosam quod numquam ut illum hic voluptatum,
+        quasi, dolor rem? Pariatur, quas. Laboriosam atque distinctio doloremque
+        obcaecati sint voluptatibus soluta, repellat adipisci quo labore
+        eligendi nisi minus enim ut unde amet? Officia adipisci itaque nihil.
+        Voluptate ex inventore modi quis perferendis animi. Sed, minima? Dolore
+        corrupti repudiandae cupiditate necessitatibus esse dolor numquam id ab
+        vitae ipsam eaque, inventore exercitationem alias dignissimos
+        reiciendis, commodi dicta harum aut? Sequi quisquam neque facere magni
+        eius! Voluptate, explicabo perferendis? Officia sed dolore soluta
+        distinctio nesciunt eos veniam maiores odio eum, ex nobis at dolorem
+        voluptatibus. Praesentium corporis nam necessitatibus dicta voluptates
+        magnam quasi, optio nulla voluptas! Laborum atque temporibus accusamus
+        exercitationem repellat sequi molestiae nobis odit doloribus voluptatum
+        dolorum commodi officia autem quibusdam mollitia deleniti, sunt
+        perferendis. Dolore accusantium alias inventore impedit possimus enim
+        perspiciatis nesciunt!
+        <div class="description__galery">
+          <h2>Galeria</h2>
+          <div id="lightgallery" class="description__galery--photos">
+            <a href="../../img/samochody/a6/img1.jpg">
+              <img src="../../img/samochody/a6/img1.jpg" />
+            </a>
+            <a href="../../img/samochody/a6/img2.jpg">
+              <img src="../../img/samochody/a6/img2.jpg" />
+            </a>
+            <a href="../../img/samochody/a6/img3.jpg">
+              <img src="../../img/samochody/a6/img3.jpg" />
+            </a>
+            <a href="../../img/samochody/a6/img4.jpg">
+              <img src="../../img/samochody/a6/img4.jpg" />
+            </a>
+            <a href="../../img/samochody/a6/img5.jpg">
+              <img src="../../img/samochody/a6/img5.jpg" />
+            </a>
+            <a href="../../img/samochody/a6/img6.jpg">
+              <img src="../../img/samochody/a6/img6.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="description__ofert bmw">
+        <h1>BMW 750 L</h1>
+        <h2>Opis oferty</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+        explicabo eaque minima distinctio cum praesentium perspiciatis
+        cupiditate quisquam laboriosam quod numquam ut illum hic voluptatum,
+        quasi, dolor rem? Pariatur, quas. Laboriosam atque distinctio doloremque
+        obcaecati sint voluptatibus soluta, repellat adipisci quo labore
+        eligendi nisi minus enim ut unde amet? Officia adipisci itaque nihil.
+        Voluptate ex inventore modi quis perferendis animi. Sed, minima? Dolore
+        corrupti repudiandae cupiditate necessitatibus esse dolor numquam id ab
+        vitae ipsam eaque, inventore exercitationem alias dignissimos
+        reiciendis, commodi dicta harum aut? Sequi quisquam neque facere magni
+        eius! Voluptate, explicabo perferendis? Officia sed dolore soluta
+        distinctio nesciunt eos veniam maiores odio eum, ex nobis at dolorem
+        voluptatibus. Praesentium corporis nam necessitatibus dicta voluptates
+        magnam quasi, optio nulla voluptas! Laborum atque temporibus accusamus
+        exercitationem repellat sequi molestiae nobis odit doloribus voluptatum
+        dolorum commodi officia autem quibusdam mollitia deleniti, sunt
+        perferendis. Dolore accusantium alias inventore impedit possimus enim
+        perspiciatis nesciunt!
+        <div class="description__galery">
+          <h2>Galeria</h2>
+          <div id="lightgallery" class="description__galery--photos">
+            <a href="../../img/samochody/750 L/imgkier1.jpg">
+              <img src="../../img/samochody/750 L/imgkier1.jpg" />
+            </a>
+            <a href="../../img/samochody/750 L/imgkier2.jpg">
+              <img src="../../img/samochody/750 L/imgkier2.jpg" />
+            </a>
+            <a href="../../img/samochody/750 L/imgkier3.jpg">
+              <img src="../../img/samochody/750 L/imgkier3.jpg" />
+            </a>
+            <a href="../../img/samochody/750 L/img1.jpg">
+              <img src="../../img/samochody/750 L/img1.jpg" />
+            </a>
+            <a href="../../img/samochody/750 L/img2.jpg">
+              <img src="../../img/samochody/750 L/img2.jpg" />
+            </a>
+            <a href="../../img/samochody/750 L/img3.jpg">
+              <img src="../../img/samochody/750 L/img3.jpg" />
+            </a>
+            <a href="../../img/samochody/750 L/img4.jpg">
+              <img src="../../img/samochody/750 L/img4.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="description__ofert mercedes">
+        <h1>Mercedes Sprinter</h1>
+        <h2>Opis oferty</h2>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur
+        explicabo eaque minima distinctio cum praesentium perspiciatis
+        cupiditate quisquam laboriosam quod numquam ut illum hic voluptatum,
+        quasi, dolor rem? Pariatur, quas. Laboriosam atque distinctio doloremque
+        obcaecati sint voluptatibus soluta, repellat adipisci quo labore
+        eligendi nisi minus enim ut unde amet? Officia adipisci itaque nihil.
+        Voluptate ex inventore modi quis perferendis animi. Sed, minima? Dolore
+        corrupti repudiandae cupiditate necessitatibus esse dolor numquam id ab
+        vitae ipsam eaque, inventore exercitationem alias dignissimos
+        reiciendis, commodi dicta harum aut? Sequi quisquam neque facere magni
+        eius! Voluptate, explicabo perferendis? Officia sed dolore soluta
+        distinctio nesciunt eos veniam maiores odio eum, ex nobis at dolorem
+        voluptatibus. Praesentium corporis nam necessitatibus dicta voluptates
+        magnam quasi, optio nulla voluptas! Laborum atque temporibus accusamus
+        exercitationem repellat sequi molestiae nobis odit doloribus voluptatum
+        dolorum commodi officia autem quibusdam mollitia deleniti, sunt
+        perferendis. Dolore accusantium alias inventore impedit possimus enim
+        perspiciatis nesciunt!
+        <div class="description__galery">
+          <h2>Galeria</h2>
+          <div id="lightgallery" class="description__galery--photos">
+            <a href="../../img/samochody/sprinter/">
+              <img src="../../img/samochody/sprinter/img1.jpg" />
+            </a>
+            <a href="../../img/samochody/sprinter//img2.jpg">
+              <img src="../../img/samochody/sprinter/img2.jpg" />
+            </a>
+            <a href="../../img/samochody/sprinter//img3.jpg">
+              <img src="../../img/samochody/sprinter/img3.jpg" />
+            </a>
+            <a href="../../img/samochody/sprinter//img4.jpg">
+              <img src="../../img/samochody/sprinter/img4.jpg" />
+            </a>
+            </a>
+          </div>
         </div>
       </div>
     </section>
-
+    <section class="ofert__description--prices">
+            <h1>Cennik</h1>
+            <table>
+              <tr>
+                <td>Pojazd</td>
+                <td class="table__prices">
+                  Sezon niski <i class="fas fa-info-circle"></i>
+                </td>
+                <td>
+                  Sezon średni <i class="fas fa-info-circle"></i
+                  >
+                </td>
+                <td>
+                  Sezon wysoki
+                  <i class="fas fa-info-circle"></i
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Audi A6</td>
+                <td>- zł</td>
+                <td>- zł</td>
+                <td>- zł</td>
+              </tr>
+              <tr>
+                <td>BMW 750 L</td>
+                <td>- zł</td>
+                <td>- zł</td>
+                <td>- zł</td>
+              </tr>
+              <tr>
+                <td>Mercedes Sprinter</td>
+                <td>- zł</td>
+                <td>- zł</td>
+                <td>- zł</td>
+              </tr>
+            </table>
+    
+            <p>* podane ceny obowiązują za dobę najmu</p>
+            <a
+              href="Trans-Al__Rentals__cennik.pdf"
+              download="Trans-Al__Rentals__cennik.pdf"
+              >Pobierz pełny cennik</a
+            >
+    </section>
+    <section class="availability">
+        <form class="availability__form">
+          <h2>
+            Zapytaj o dostępność
+          </h2>
+          <p>
+            Wypełnij formularz a my przygotujemy dla Ciebie ofertę dostosowaną do
+            Twoich potrzeb
+          </p>
+          <span
+            ><p>IMIĘ</p>
+            <input class="form__name" type="text" />
+          </span>
+          <span
+            ><p>EMAIL</p>
+            <input type="text" />
+          </span>
+          <span
+            ><p>TELEFON (OPCJONALNIE)</p>
+            <input type="text" />
+          </span>
+          <!-- <p>E-mail</p>
+            <input type="text" />
+            <p>Telefon (opcjonalnie)</p>
+            <input type="text" /> -->
+          <span>
+            <p>POJAZD</p>
+            <select name="carlist" form="carform">
+              <option value="volvo">Audi A6</option>
+              <option value="saab">BMW 750 L </option>
+              <option value="opel">Mercedes Sprinter</option>
+            </select>
+          </span>
+          <span class="form__date">
+            <span> OD <input type="date"/></span>
+            <span>DO <input type="date"/></span>
+          </span>
+  
+          <button>Wyślij</button>
+        </form>
+      </section>
     <section class="about">
       <div class="about__text">
         <img class="logo" src="../../img/logo.jpg" alt="" />
@@ -137,7 +367,8 @@
         <div>
           <p>Adres: Energetyków 2, 32-050 Skawina, Polska</p>
           <p>Tel.: +48 12 276 86 15</p>
-          <p>Email: trans-al@trans-al.eu</p>
+          <p>Email handlowy: rentals@trans-al.pl</p>
+          <p>Email rezerwacyjny: rezerwacje@trans-al.pl</p>
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.959120591706!2d19.808532715714158!3d49.974625179412484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165df782caf367%3A0xd8809a5e44294afe!2sEnergetyk%C3%B3w+2%2C+32-020+Skawina!5e0!3m2!1spl!2spl!4v1559128854101!5m2!1spl!2spl"
@@ -159,6 +390,6 @@
         interval: 3000
       });
     </script>
-    <script src="script.js"></script>
+    <script src="car-driver.js"></script>
   </body>
 </html>

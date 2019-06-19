@@ -161,15 +161,51 @@ document.querySelector(".menu__about").addEventListener("click", () => {
     .querySelector(".about")
     .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
 });
-
+document.querySelector(".menu__prices_mob").addEventListener("click", () => {
+  document
+    .querySelector(".ofert__description--prices")
+    .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+});
 document
-  .querySelector(".description__car--btn")
+  .querySelector(".menu__availability_mob")
   .addEventListener("click", () => {
-    console.log("click");
-    document
-      .querySelector(".description__car--more")
-      .classList.add("show__more");
+    document.querySelector(".availability").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
   });
+
+document.querySelector(".menu__about_mob").addEventListener("click", () => {
+  document
+    .querySelector(".about")
+    .scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+});
+
+document.querySelector(".ham").addEventListener("click", () => {
+  document.querySelector(".mobile__naw").classList.add("mobile__naw--active");
+});
+document.querySelector(".fa-window-close").addEventListener("click", () => {
+  document
+    .querySelector(".mobile__naw")
+    .classList.remove("mobile__naw--active");
+});
+document.querySelectorAll(".mob").forEach(item => {
+  item.addEventListener("click", () => {
+    document
+      .querySelector(".mobile__naw")
+      .classList.remove("mobile__naw--active");
+  });
+});
+
+// document.querySelectorAll(".description__car--btn").forEach(item => {
+//   item.addEventListener("click", () => {
+//     console.log("click");
+//     document
+//       .querySelector(".description__car--more")
+//       .classList.add("show__more");
+//   });
+// });
 
 for (i = 0; i < cars.length; i++) {
   const tr = document.createElement("tr");
@@ -199,7 +235,7 @@ for (i = 0; i < cars.length; i++) {
 // ofert.innerHTML = cars[1].brand;
 // document.querySelector(".ofert__active").appendChild(ofert);
 
-for (i = 0; i < cars.length; i++) {
+for (i = 1; i < cars.length; i++) {
   console.log("działa");
   const description = document.createElement("div");
   description.className = "description__car";
@@ -247,7 +283,7 @@ for (i = 0; i < cars.length; i++) {
 
   const button = document.createElement("button");
   button.className = "description__car--btn";
-  button.innerHTML = "Zobacz więcej";
+  button.innerHTML = "sprawdź dostępność";
   details.appendChild(price);
   details.appendChild(button);
 
@@ -272,3 +308,13 @@ for (i = 0; i < cars.length; i++) {
   galery.appendChild(photos);
   description.appendChild(galery);
 }
+
+document.querySelectorAll(".description__car--btn").forEach(item => {
+  item.addEventListener("click", () => {
+    document.querySelector(".availability").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+  });
+});

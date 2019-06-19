@@ -1,6 +1,7 @@
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
 }
 
 body .menu {
@@ -24,6 +25,79 @@ body .menu {
   font-weight: 100;
 }
 
+@media only screen and (max-width: 1024px) {
+  body .menu {
+    display: inline;
+    text-align: center;
+  }
+}
+
+body .menu .ham {
+  position: absolute;
+  top: 12px;
+  right: 50px;
+  width: 40px;
+  height: 30px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px) {
+  body .menu .ham {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+body .menu .ham span {
+  height: 6px;
+  background-color: #383838;
+  border-radius: 30px;
+}
+
+body .menu .mobile__naw {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: -270px;
+  left: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .menu .mobile__naw--active {
+  top: 0;
+}
+
+body .menu .mobile__naw--active .fa-window-close {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+  font-size: 30px;
+}
+
+body .menu .mobile__naw--active ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+body .menu .mobile__naw--active ul li {
+  padding: 10px;
+}
+
 body .menu ul {
   list-style-type: none;
   display: -webkit-box;
@@ -32,7 +106,7 @@ body .menu ul {
   right: 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body .menu ul {
     display: none;
   }
@@ -41,7 +115,6 @@ body .menu ul {
 body .menu ul li {
   margin-left: 25px;
   font-weight: 600;
-  font-family: 'Lato', sans-serif;
   letter-spacing: 0px;
   cursor: pointer;
 }
@@ -300,7 +373,7 @@ body .oferts .ofert__description--prices {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body .oferts .ofert__description--prices {
     width: 100%;
     margin: 0;
@@ -346,6 +419,8 @@ body .oferts .ofert__description--prices table td .fa-info-circle:hover + span {
 body .availability {
   margin: 50px 0%;
   width: 100%;
+  color: #fff;
+  background-color: #404b5f;
 }
 
 body .availability .availability__form {
@@ -358,13 +433,12 @@ body .availability .availability__form {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 25px;
-  background-color: #f9f9f959;
   border-radius: 5px;
   margin: auto;
   width: 60%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body .availability .availability__form {
     width: 100%;
   }
@@ -411,6 +485,7 @@ body .availability .availability__form input, body .availability .availability__
   background-color: transparent;
   margin: auto;
   outline: none;
+  color: #fff;
 }
 
 body .availability .availability__form button {
@@ -429,7 +504,7 @@ body .about {
   width: 80%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body .about {
     width: 100%;
     margin: 0;
@@ -466,7 +541,7 @@ body .about .about__contact {
   width: 80%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body .about .about__contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -487,7 +562,7 @@ body .about .about__contact div {
   margin: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body .about .about__contact div {
     width: 100%;
     text-align: center;
@@ -507,7 +582,7 @@ body .about .about__contact div iframe {
   border-radius: 8px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body .about .about__contact div iframe {
     width: 100%;
     margin: auto;
@@ -520,7 +595,7 @@ body .about .about__contact img {
 }
 
 body footer {
-  background-color: #4e4e4e;
+  background-color: #070c1d;
   padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;

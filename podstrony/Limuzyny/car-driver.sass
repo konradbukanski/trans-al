@@ -1,82 +1,166 @@
-.header
-    background-color: #234
-    display: flex
-    margin-top: 60px
-    height: 600px
-    position: relative
-    .header__left
-        width: 50%
-        background-color: #125
-        color: #fff
-        position: relative
-        div
-            position: absolute
-            top: 50%
-            left: 50%
-            text-align: center
-            transform: translate(-50%,-50%)
-            h2
-                padding: 20px
-            
-        
-    .header__right
-        width: 50%
-        background-color: #545
-        background-image: url("../img/driver.jpg")
-        background-position: center
-        background-size: cover
+$moblileS: 425px
+$tablet: 768px
+$laptopS: 1024px
+$laptopL: 1440px
 
-    span
-        position: absolute
-        left: 50%
-        top: 50%
-        padding: 100px
-        border-radius: 50%
-        background-color: #fff
-        transform: translate(-50%, -50%)
-.cars
-    background-color: #123
-    height: 800px
-    position: relative
-    display: flex
-    flex-direction: column
-    h2
-        padding-top: 100px
-        text-align: center
-        color: #fff
-    span
-        margin: 50px 50% 
-        transform: translateX(-50%)
-        box-sizing: content-box
-        width: 150px
-        height: 150px
-        padding: 50px
-        background-color: #fff
-        border-radius: 50%
-        border: 2px solid red
-        box-shadow: 0px 2px 19px 0px rgba(0,0,0,0.75)
-        img
-            margin: 50% 
-            transform: translate(-50%, -50%)
-    .cars__choose
+body
+    font-family: 'Lato', sans-serif
+    // background-color: #f3f3f3
+    .header
         display: flex
-        justify-content: space-around
-        width: 80%
-        margin: 0 auto
-        div
-            width: 150px
-            height: 150px
-            background-color: #fff
-            border-radius: 50%
-            cursor: pointer
+        margin-top: 60px
+        height: 600px
+        position: relative
+        @media only screen and (max-width: $tablet)
+            display: none
+        
+        .header__left
+            width: 50%
+            background-color: #070c1d
+            color: #fff
             position: relative
-            img
+            div
                 position: absolute
                 top: 50%
                 left: 50%
-                width: 80%
+                text-align: center
                 transform: translate(-50%,-50%)
-        .cars__choose--two
-            margin-top: 50px
+                h2
+                    padding: 20px
+                
             
+        .header__right
+            width: 50%
+            background-color: #545
+            background-image: url("../img/driver.jpg")
+            background-position: center
+            background-size: cover
 
+        span
+            position: absolute
+            left: 50%
+            top: 50%
+            padding: 60px
+            box-sizing: content-box
+            border-radius: 50%
+            background-color: #fff
+            transform: translate(-50%, -50%)
+            i
+                font-size: 50px
+    .cars
+        border-top: 4px solid #070c1d
+        background-color: #123
+        // min-height: 800px
+        position: relative
+        display: flex
+        flex-direction: column
+        h2
+            padding-top: 100px
+            text-align: center
+            color: #fff
+        span
+            margin: 80px 50% 
+            transform: translateX(-50%)
+            box-sizing: content-box
+            width: 150px
+            height: 150px
+            padding: 60px
+            background-color: #f1f1f1
+            // border-radius: 40% 10% 45% 15%
+            // border: 5px solid #797979
+            box-shadow: 0px 0px 10px 4px rgba(244,67,54,1)
+            img
+                margin: 50% 
+                transform: translate(-50%, -50%)
+        .cars__choose
+            
+            display: flex
+            justify-content: space-around
+            width: 80%
+            margin: 100px auto 150px
+            @media only screen and (max-width: $tablet)
+                flex-direction: column
+            div
+                width: 150px
+                height: 150px
+                background-color: #fff
+                border-radius: 50%
+                cursor: pointer
+                position: relative
+                // border: 2px solid red
+                box-shadow: 0px 0px 0px 16px rgba(255,255,255,1)
+                background-color: #f1f1f1
+                @media only screen and (max-width: $tablet)
+                    margin: 50px auto
+                img
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    width: 80%
+                    transform: translate(-50%,-50%)
+                p
+                    color: #ffffff
+                    margin-top: 180px
+                    text-align: center
+            .cars__choose--two
+                margin-top: 50px
+        button
+            margin: 100px auto
+            width: 150px
+            padding: 20px 10px
+            border: 0
+            border-radius: 50px
+            background-color: #f44336
+            color: #fff
+            box-shadow: 0px 0px 10px 4px rgba(255,255,255,0.4)
+    .description
+        width: 80%
+        margin: 100px auto
+        font-size: 20px
+        h2
+            font-weight: bold
+            margin: 60px 0
+        .description__galery--photos
+            width: 80%
+            margin: 100px auto
+            position: relative
+            // display: flex
+            img
+                width: 30%
+                padding: 10px
+                @media only screen and (max-width: $laptopS)
+                    width: 45%
+                @media only screen and (max-width: $tablet)
+                    width: 100%
+    .ofert__description--prices
+          margin-left: 10%
+          width: 80%
+          text-align: center
+          @media only screen and (max-width: $tablet)
+            width: 100%
+            margin: 0
+          table
+              margin-left: 50%
+              margin-top: 50px
+              transform: translateX(-50%)
+              td
+                padding: 30px
+                border: 1px solid #F1F1F1
+                // border: 1px 1px 0px 1px
+                span
+                  position: absolute
+                  margin-top: 10px
+                  margin-left: 60px
+                  padding: 15px
+                  background-color: #fff
+                  border-radius: 15px
+                  display: none
+                  border: 1px solid #ccc
+                  min-width: 150px
+                  p
+                    border-bottom: 1px solid #ccc
+                  // left: 130px
+                .fa-info-circle
+                  cursor: pointer
+                  &:hover+span
+                    display: block

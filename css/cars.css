@@ -75,7 +75,7 @@
           transform: translateY(-50%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .description .description__car .description__car--main img {
     position: relative;
     width: 100%;
@@ -89,7 +89,7 @@
   margin-left: 50%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .description .description__car .description__car--main .description__car--details {
     margin: auto;
   }
@@ -151,6 +151,7 @@
 .description .description__car .description__car--more {
   margin: 0 5%;
   min-height: 300px;
+  display: none;
   -webkit-transition: 1s;
   transition: 1s;
 }

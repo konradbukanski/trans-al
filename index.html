@@ -20,6 +20,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -37,25 +41,50 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/logosmall.jpg" />
+    <title>Trans-Al Rentals</title>
   </head>
   <body>
     <section class="menu">
       <div class="menu__logo">
         <a href="index.html"><img src="img/logo.jpg" alt=""/></a>
       </div>
+      <div class="ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="mobile__naw">
+            <i class="far fa-window-close"></i>
+            <ul>
+              <li class="menu__camper">
+                <a href="index.html">Kampery</a>
+              </li>
+              <li class="menu__cars">
+                <a href="podstrony/Limuzyny/cars.html">Samochody</a>
+              </li>
+              <li class="menu__limousines"><a href="podstrony/Limuzyny/cars-driver.html">Samochód z kierowcą</a></li>
+              <li class="menu__prices_mob mob">Cennik</li>
+              <li class="menu__availability_mob mob">Dostępność</li>
+              <li class="menu__about_mob mob">O nas</li>
+            </ul>
+        </nav>
       <ul>
         <li class="menu__camper">
-          <a href="index.html">KAMPERY</a>
+          <a href="index.html">Kampery</a>
         </li>
         <!-- <li class="menu__vany">VANY</li> -->
         <li class="menu__cars">
-          <a href="podstrony/Samochody/cars.html">SAMOCHODY</a>
+          <a href="podstrony/Samochody/cars.html">Samochody</a>
         </li>
-        <li class="menu__limousines"><a href="../../podstrony/Limuzyny/cars-driver.html">SAMOCHÓD Z KIEROWCĄ</a></li>
-        <li class="menu__prices">CENNIK</li>
-        <li class="menu__availability">DOSTĘPNOŚĆ</li>
-        <li class="menu__about">O NAS</li>
+        <li class="menu__limousines">
+          <a href="../../podstrony/Limuzyny/cars-driver.html"
+            >Samochód z kierowcą</a
+          >
+        </li>
+        <li class="menu__prices">Cennik</li>
+        <li class="menu__availability">Dostępność</li>
+        <li class="menu__about">O nas</li>
       </ul>
     </section>
     <section class="header">
@@ -144,32 +173,6 @@
       </div>
     </section>
     <section class="oferts">
-      <i class="fas fa-chevron-left"></i>
-      <div class="ofert__choose">
-        <i class="fas fa-chevron-left"></i>
-        <div class="ofert__choose--items">
-          <span class="ofert__choose--Carthago"
-            ><img src="img/kampery/carthago/Carthago.jpg" />Carthago chick
-            C-line 5.9 XL
-            <p>od 750zł</p></span
-          >
-          <span class="ofert__choose--Adria"
-            ><img src="img/kampery/adria/caoralXL.png" /> Adria Coral XL 670 SL
-            <p>od 450zł</p></span
-          >
-          <span class="ofert__choose--Dethleffs"
-            ><img src="img/kampery/dethleffs/Dethleffs.jpg" />Dethleffs Trend T
-            7057 EB
-            <p>od 400zł</p></span
-          >
-          <span class="ofert__choose--Volkswagen"
-            ><img src="img/kampery/caravelle/Caravelle.jpg" />Volkswagen
-            Caravelle
-            <p>od 279zł</p></span
-          >
-        </div>
-        <i class="fas fa-chevron-right"></i>
-      </div>
 
       <div class="ofert Carthag display">
         <div class="ofert__box ">
@@ -378,7 +381,6 @@
           <img src="img/kampery/dethleffs/Dethleffs.jpg" />
           <span>
             <h1>Dethleffs Trend T 7057 EB</h1>
-            
           </span>
         </div>
         <div class="ofert__details">
